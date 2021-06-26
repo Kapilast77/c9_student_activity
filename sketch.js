@@ -1,6 +1,6 @@
 var n1,n2;
 var b1,b2,b3,b4;
-
+var num1,num2
 function setup() {
   
   createCanvas(400, 400);
@@ -19,7 +19,9 @@ function setup() {
   b2.position(100, 200);
   b2.mousePressed(mul);
   
-  
+  mul(){
+    console.log(n1*n2)
+  }
   textAlign(CENTER);
   textSize(15);
 }
@@ -28,6 +30,10 @@ function draw() {
   background(200,10,200)
   text("Number 1",70,50)
   text("Number 2",270,50)
+  n1=parseInt(num1.value)
+  n2=parseInt(num2.value)
   
-
 }
+function add() {
+  console.log(n1+n2) 
+ } 
